@@ -1,0 +1,112 @@
+/*
+CTC Separate Stylesheet
+Updated: 2019-12-08 14:01:36
+Theme Name: Doody Child
+Template: doody
+Author: chellemdg
+Description: Doody is a minimalistic theme based in “_s” (by Automattic, the main people behind WordPress development) and Twitter Bootstrap (the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web).This theme, like WordPress, is licensed under the GPL. Other features – Currently using Bootstrap v4.3.1, it has customizable color adjustments with beautiful color schemes by default, uses a harmonious fluid grid system prepared for mobile, you are allowed to remove the link at the footer and it have an impeccable care in every detail. Doody will make your WordPress look beautiful and simple in any situation.
+Tags: blog,custom-logo,grid-layout,one-column,two-columns,custom-background,custom-colors,custom-header,custom-menu,featured-image-header,featured-images,flexible-header,full-width-template,threaded-comments,left-sidebar,right-sidebar
+Version: 6.9.0.1575820896
+*/
+html {
+  scroll-behavior: smooth;
+}
+.allVH {
+  height: 100vh;
+}
+@media screen and (max-width: 767px){
+  allVH {
+   min-height: 100vh;
+   height: auto;
+  }
+  .allPC {
+    min-height: 100%;
+    height: auto;
+}
+}
+.allPC {
+  height: 100%;
+}
+#navtop {
+  height: 70px;
+}
+@media screen and (max-width: 767px){
+#navtop {
+  max-height: 15vh;
+}
+}
+.custom-header .page-scroller {
+	position: absolute;
+	bottom: 5vh;
+	left: auto;
+	right: auto;
+	top: auto;
+
+	z-index: 999;
+ -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+/* Ajuste padrão */
+.admin-bar .fixed-top,
+.admin-bar .sticky-top {
+	top: 32px !important;
+}
+
+/* Reset font-face */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-family:   "Helvetica Neue", Arial, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#masthead, #colophon {
+  font-family:   "Helvetica Neue", Arial, sans-serif;
+}
+#masthead .navbar-brand a {
+  font-family: sans-serif;
+  font-weight: initial;
+  font-size: 1.6rem;
+}
+
+#masthead .navbar-nav li a {
+  font-weight: initial;
+  padding: 0.5rem;
+}
+
+#masthead .navbar-nav li.current_page_item a {
+  font-weight: initial;
+}
+.bg-dark {
+	background: rgbA(48,48,48,0.9) !important;
+}
+.nav-item.active li{
+	color: #fff !important;
+}
+a.nav-link{
+	color: #fff;
+	text-decoration: none;
+}
+.single #content {
+	padding-top: 0.5rem !important;
+}
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#colophon {
+  background: linear-gradient(to left, #18bc9c, #2c3e50);
+  color: white;
+}
